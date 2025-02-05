@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(d6a8deed28a625bbd3ef6697e508297e.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+.card {
+    background-color: #dc2626;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 24px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-content {
+    background-color: #dc2626;
+    color: white;
+    text-align: center;
+  }
+
+  .form-group {
+    margin: 1rem 0;
+    text-align: left;
+  }
+
+  .label {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Brush Script MT', cursive;
+  }
+
+  .input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .message {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .hearts {
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.8;
+  }
+
+  .heart-1 { top: 10px; right: 10px; }
+  .heart-2 { top: 20px; right: 40px; font-size: 1rem; }
+  
+  .card-border {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid white;
+    border-radius: 28px;
+    z-index: -1;
+  } 
+  .valentine-button {
+    position: relative;
+    overflow: hidden;
+    padding: 16px 32px;
+    border-radius: 9999px;
+    border: none;
+    margin-top: 290px;
+    margin-left: 600px;
+    background: linear-gradient(to right, #ec4899, #ef4444);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.valentine-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.3);
+}
+
+.button-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.heart {
+    transition: transform 0.3s;
+}
+
+.valentine-button:hover .heart {
+    transform: scale(1.25);
+}
+
+.button-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #db2777, #dc2626);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.valentine-button:hover .button-overlay {
+    opacity: 1;
+}
+a{
+    text-decoration: none;
+}  
