@@ -3,28 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.card-wrapper{
     background-position: center;
     background-size: cover;
     justify-content: center;
-    background-image: url(d6a8deed28a625bbd3ef6697e508297e.jpg);
+    display: flex;
+    width: max-content;
+    margin: auto;
+    flex-direction: column;
+    /*background-image: url(d6a8deed28a625bbd3ef6697e508297e.jpg);*/
+}
+.scalloped-box {
+  --r: 25px;
+  height: 500px;
+  aspect-ratio: 1;
+  padding: calc(1.5*var(--r));
+  background: #dc2626;
+  mask: 
+    linear-gradient(#000 0 0) no-repeat
+     50%/calc(100% - 2*var(--r)) calc(100% - 2*var(--r)), 
+    radial-gradient(farthest-side,#000 97%,#0000) 
+     0 0/calc(2*var(--r)) calc(2*var(--r)) round;
 }
 .card {
     background-color: #dc2626;
     width: 500px;
     padding: 2rem;
-    border-radius: 24px;
-    margin: 0 auto;
     position: relative;
-    margin-top: 100px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 2;
+    margin: 0 auto;
   }
-
   .card-content {
     background-color: #dc2626;
     color: white;
     text-align: center;
+    margin: 0 auto;
   }
 
   .form-group {
@@ -71,17 +84,7 @@ body{
 
   .heart-1 { top: 10px; right: 10px; }
   .heart-2 { top: 20px; right: 40px; font-size: 1rem; }
-  
-  .card-border {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 2px solid white;
-    border-radius: 28px;
-    z-index: -1;
-  } 
+
   .valentine-button {
     position: relative;
     overflow: hidden;
