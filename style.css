@@ -3,19 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+  background-size: cover;
+  background-image: url(00471f0c-ef59-4213-98dc-0e76c9901c02);
+}
 .card-wrapper{
-    background-position: center;
     background-size: cover;
-    justify-content: center;
     display: flex;
     width: max-content;
     margin: auto;
     flex-direction: column;
-    /*background-image: url(d6a8deed28a625bbd3ef6697e508297e.jpg);*/
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    margin: 25px 0 0 25px;
 }
 .scalloped-box {
   --r: 25px;
-  height: 500px;
+  height: 450px;
   aspect-ratio: 1;
   padding: calc(1.5*var(--r));
   background: #dc2626;
